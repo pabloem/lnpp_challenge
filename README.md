@@ -7,6 +7,9 @@ de acopio mas cercanos para un poblador del estado de Nayarit.
 Para obtener instrucciones sobre como correr cada script, es 
 posible correrlos *sin argumentos*.
 
+*NOTA:* El script `limpiar.py` lanza un pequeno warning al cargar el archivo
+de excel. Esto no representa ningun problema, y el resto del programa corre normalmente.
+
 ### Asumpciones del modelo
 * El archivo original es XLSX.
 * Todas las paginas del archivo XLSX contienen tablas con el mismo formato
@@ -25,6 +28,10 @@ El programa requiere dos librerias no estandar de Python:
 Primero es necesario limpiar los datos. Para esto, se corre:
 
 `$> ./scripts/limpiar.py data/refugios_nayarit.xlsx data/resultado.csv 6`
+
+*NOTA:* El script `limpiar.py` lanza un pequeno warning al cargar el archivo
+de excel. Esto no representa ningun problema, y el resto del programa corre normalmente.
+
 
 Esto extrae los datos del archivo XLSX empezando con el renglon 7 (porque ahi
 empiezan los datos). 
